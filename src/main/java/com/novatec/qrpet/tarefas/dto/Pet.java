@@ -1,8 +1,13 @@
 package com.novatec.qrpet.tarefas.dto;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "pets")
 public class Pet {
 
-    private Long id;
+    @Id
+    private String id;
     private String foto_url;
     private String nome;
     private int ano_nascimento;
@@ -12,17 +17,11 @@ public class Pet {
     private String telefone_alt;
     private String observacao;
 
-    public Pet (String nome, String nome_dono, String telefone){
-        this.nome = nome;
-        this.nome_dono = nome_dono;
-        this.telefone = telefone;
-    }
-
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
