@@ -1,29 +1,35 @@
 package com.novatec.qrpet.tarefas.dto;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import java.util.List;
+
 
 @Document(collection = "users") // Nome da coleção no MongoDB
+@Validated
 public class Usuario {
     @Id
     private String id;
     @NotBlank(message = "O campo nome é obrigatório")
-    @NotNull
-    @NotEmpty
     private String nome;
     @NotBlank(message = "O campo e-mail é obrigatório")
-    @NotNull
-    @NotEmpty
     @Email(message = "Formato de e-mail inválido")
     private String email;
     @NotBlank(message = "O campo senha é obrigatório")
-    @NotNull
-    @NotEmpty
     private String senha;
+
+    @Transient // Para garantir que o campo não seja persistido no MongoDB
+    private List<String> validationErrors;
+
+    public List<String> getValidationErrors() {
+        return validationErrors;
+    }
 
     public String getId() {
         return id;
@@ -56,5 +62,9 @@ public class Usuario {
 
     public void setSenha( String senha) {
         this.senha = senha;
+    }
+
+    public void setValidationErrors(List<String> validationErrors) {
+        this.validationErrors = validationErrors;
     }
 }

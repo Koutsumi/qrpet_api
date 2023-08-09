@@ -2,10 +2,11 @@ package com.novatec.qrpet.tarefas.controller;
 
 import com.novatec.qrpet.tarefas.dto.Usuario;
 import com.novatec.qrpet.tarefas.service.UsuarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
+
 
 import org.springframework.http.ResponseEntity;
 
