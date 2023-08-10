@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.novatec.qrpet.tarefas.api", "com.novatec.qrpet.tarefas.service"})
+@ComponentScan(basePackages = {"com.novatec.qrpet.tarefas.controller", "com.novatec.qrpet.tarefas.service", "com.novatec.qrpet.tarefas.dto", "com.novatec.qrpet.tarefas.interfaces"})
 public class ApplicartionQrPet {
     public static void main(String[] args) {
         SpringApplication.run(ApplicartionQrPet.class, args);

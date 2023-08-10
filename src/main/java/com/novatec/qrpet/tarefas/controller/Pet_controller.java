@@ -1,4 +1,4 @@
-package com.novatec.qrpet.tarefas.api;
+package com.novatec.qrpet.tarefas.controller;
 
 import com.novatec.qrpet.tarefas.dto.Pet;
 import com.novatec.qrpet.tarefas.service.PetService;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 @RestController
 @RequestMapping(value = "/pets")
-public class Pet_api {
+public class Pet_controller {
 
     @Autowired
     private PetService petService;
