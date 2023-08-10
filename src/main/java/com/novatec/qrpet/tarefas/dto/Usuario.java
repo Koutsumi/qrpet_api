@@ -1,8 +1,6 @@
 package com.novatec.qrpet.tarefas.dto;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -52,7 +50,7 @@ public class Usuario {
         return email;
     }
 
-    public void setEmail( String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -60,7 +58,7 @@ public class Usuario {
         return senha;
     }
 
-    public void setSenha( String senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 
