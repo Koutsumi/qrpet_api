@@ -46,7 +46,7 @@ public class Usuario_controller {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
     @PutMapping("/{id}")
-    public ResponseEntity<Usuario> updateProduct(@Valid @PathVariable String id, @RequestBody Usuario usuario) {
+    public ResponseEntity<Usuario> updateProduct(@PathVariable String id,@Valid @RequestBody Usuario usuario) {
         usuario.setId(id);
         Usuario updatedProduct = usuarioService.atualizar(usuario);
         return new ResponseEntity<>(updatedProduct, HttpStatus.OK);
