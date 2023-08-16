@@ -2,24 +2,27 @@ package com.novatec.qrpet.tarefas.controller;
 
 import com.novatec.qrpet.tarefas.dto.Pet;
 import com.novatec.qrpet.tarefas.service.PetService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 
 import org.springframework.http.ResponseEntity;
 
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 @RestController
 @RequestMapping(value = "/pets")
+@Validated
 public class Pet_controller {
 
     @Autowired
     private PetService petService;
 
     @PostMapping
-    public ResponseEntity<Pet> criar(@RequestBody Pet pet) {
+    public ResponseEntity<Pet> criar(@Valid @RequestBody Pet pet) {
         System.out.println("teste");
         Pet petCriado = petService.criar(pet);
         return new ResponseEntity<>(petCriado,HttpStatus.CREATED);
@@ -38,7 +41,7 @@ public class Pet_controller {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
     @PutMapping("/{id}")
-    public ResponseEntity<Pet> updateProduct(@PathVariable String id, @RequestBody Pet pet) {
+    public ResponseEntity<Pet> updateProduct(@PathVariable String id,@Valid @RequestBody Pet pet) {
         pet.setId(id);
         Pet updatedProduct = petService.atualizar(pet);
         return new ResponseEntity<>(updatedProduct, HttpStatus.OK);
