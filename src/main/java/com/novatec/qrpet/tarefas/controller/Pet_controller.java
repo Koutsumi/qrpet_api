@@ -40,6 +40,19 @@ public class Pet_controller {
         return product.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+
+    @GetMapping("/user/{userID}")
+    public ResponseEntity<List<Pet>> getRegistrosByUserID(@PathVariable String userID) {
+        List<Pet> registros = petService.getRegistrosByUserID(userID);
+
+        if (registros.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity.ok(registros);
+    }
+
+
     @PutMapping("/{id}")
     public ResponseEntity<Pet> updateProduct(@PathVariable String id,@Valid @RequestBody Pet pet) {
         pet.setId(id);

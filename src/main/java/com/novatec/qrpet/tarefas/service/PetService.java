@@ -28,6 +28,10 @@ public class PetService {
         return petRepository.findAll();
     }
 
+    public List<Pet> getRegistrosByUserID(String userId) {
+        return petRepository.findByUserId(userId);
+    }
+
     public Optional<Pet> readOne(String id){
         return petRepository.findById(id);
     }
