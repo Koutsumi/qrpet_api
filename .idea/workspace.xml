@@ -8,7 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Pet_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Pet_controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/interfaces/Pet_repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/interfaces/Pet_repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/interfaces/Usuario_repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/interfaces/Usuario_repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/PetService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
