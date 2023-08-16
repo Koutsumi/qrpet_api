@@ -1,18 +1,24 @@
 package com.novatec.qrpet.tarefas.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.validation.annotation.Validated;
 
 @Document(collection = "pets")
+@Validated
 public class Pet {
 
     @Id
     private String id;
     private String foto_url;
+    @NotBlank (message = "O campo nome é obrigatório")
     private String nome;
     private int ano_nascimento;
+    @NotBlank (message = "O campo nome_dono é obrigatório")
     private String nome_dono;
     private String nome_dono_alt;
+    @NotBlank (message = "O campo telefone é obrigatório")
     private String telefone;
     private String telefone_alt;
     private String observacao;
