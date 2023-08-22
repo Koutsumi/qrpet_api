@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44dbc107-81a4-487f-b2f6-e9aaa82b3820" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/configuration/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Pet_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Pet_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Usuario_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/controller/Usuario_controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/dto/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/PetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/ApplicartionQrPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novatec/qrpet/tarefas/ApplicartionQrPet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
